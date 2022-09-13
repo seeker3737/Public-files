@@ -1,0 +1,32 @@
+module Vector = struct
+exception Empty
+let vempty = []
+
+let rec at n = function
+[] -> raise Empty
+| head :: rest -> if n = 0 then head else at (n-1) rest
+
+
+let vector lst = lst
+
+let rec vlength = function
+[]->0
+| head :: rest -> 1 + vlength rest
+
+let rec vshow = function
+[]-> ()
+| head :: rest -> print_int head ; print_string "," ; vshow rest 
+
+let rec isvempty = function
+[] -> true
+| head :: rest -> false 
+
+end;;
+open Vector ;;
+let test1 = vempty ;;
+let test2 = at 3 [1;2;3;4];;
+let test3 = vector [1;2;3;4] ;;
+let test4 = vlength [2;3;4;5];;
+let test5 = vshow [1;2;3;4];;
+let test6 = isvempty [];;
+let test7 = isvempty [1;2;3;4;5];;
