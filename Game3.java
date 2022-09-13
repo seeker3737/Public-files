@@ -3,6 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
+
 public class Game3 extends JPanel {
     static final int EMPTY = 0, KURO = 1, SIRO = 2;
     static final int YMAX = 8, XMAX = 8;
