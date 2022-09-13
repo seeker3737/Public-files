@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.net.*;
 import java.io.*;
 
-
 class OthelloClient extends JFrame{
     final static int BLACK = 1;
     final static int WHITE = -1;
