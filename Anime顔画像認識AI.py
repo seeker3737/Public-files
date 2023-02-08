@@ -5,7 +5,7 @@ face_classifier = cv2.CascadeClassifier("c:/Users/siroK321/Documents/pythonfiles
 #https://ultraist.hatenablog.com/entry/20110718/1310965532 学習用xmlファイルの場所
 #https://github.com/nagadomi/lbpcascade_animeface/blob/master/lbpcascade_animeface.xml xmlファイルの場所サブ
 
-# 顔を認識させたい画像ファイルのパスを指定
+# 顔を認識させたいアニメ画像ファイルのパスを指定
 img = cv2.imread("c:/Users/siroK321/Documents/pythonfiles/VBS_face.png")
 
 # グレイスケールに変換,後述のdetectMultiScaleがグレーを要求するため
