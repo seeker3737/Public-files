@@ -1,5 +1,4 @@
-import cv2
-
+import cv2#openCV必須
 
 #https://pystyle.info/opencv-cascade-classifier/ 理論
 face_classifier = cv2.CascadeClassifier("c:/Users/siroK321/Documents/pythonfiles/pythondata/opencv-4.7.0/opencv-4.7.0/data/haarcascades/lbpcascade_animeface.xml")
@@ -17,7 +16,7 @@ faces = face_classifier.detectMultiScale(img_gray)
  
 # 検出した顔に対する処理
 for (x, y, w, h) in faces:
-    # 顔周りに四角を描画する
+    # 顔周辺に緑の四角を描画する
     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
  
 # 指定したパスへ作成した画像を出力
