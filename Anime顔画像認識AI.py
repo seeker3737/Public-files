@@ -3,7 +3,7 @@ import cv2#openCV必須
 #https://pystyle.info/opencv-cascade-classifier/ 理論
 face_classifier = cv2.CascadeClassifier("c:/Users/siroK321/Documents/pythonfiles/pythondata/opencv-4.7.0/opencv-4.7.0/data/haarcascades/lbpcascade_animeface.xml")
 #https://ultraist.hatenablog.com/entry/20110718/1310965532 学習用xmlファイルの場所
-#https://github.com/nagadomi/lbpcascade_animeface/blob/master/lbpcascade_animeface.xml xmlファイルの場所サブ
+#https://github.com/nagadomi/lbpcascade_animeface/blob/master/lbpcascade_animeface.xml xmlファイルの場所サブ(git)
 
 # 顔を認識させたいアニメ画像ファイルのパスを指定
 img = cv2.imread("c:/Users/siroK321/Documents/pythonfiles/VBS_face.png")
